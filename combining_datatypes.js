@@ -31,5 +31,34 @@ const apartmentBuilding = [
   ];
   console.log(apartmentBuilding[0][1]); 
 
+
+  //knit function
+
+  function knit() {
+    return {
+      item: 'scarf',
+      size: '6ft'
+    };
+  }
+  console.log(knit().item); 
+
+  // crayonsleelctor
+
+  function crayonSelector() {
+    return crayonBox;
+  }
+  console.log(crayonSelector().crayons[2]); // Logs 'Green'
+
+  
+  // power button
+
+  function powerButton() {
+    return function options() {
+      console.log('Select a song');
+    };
+  }
+  powerButton()(); // Logs 'Select a song'
+
+  
   
   
