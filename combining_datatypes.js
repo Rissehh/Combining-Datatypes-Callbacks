@@ -60,5 +60,18 @@ const apartmentBuilding = [
   powerButton()(); // Logs 'Select a song'
 
   
+  // vending machine
   
+  const vendingMachine = {
+    snacks: [
+      { name: 'Chips', price: 1.50 },
+      { name: 'Soda', price: 1.00 },
+      { name: 'Candy', price: 0.75 }
+    ],
+    vend(input) {
+      return this.snacks[input];
+    }
+  };
+  console.log(vendingMachine.vend(1)); 
+
   
